@@ -165,18 +165,18 @@ Apply and compare several window functions:
 
 and investigate how their shapes and parameters affect side lobes and leakage in the spectrogram.
 
-Let \( M \) be the window length (number of samples minus 1) and \( i = 0, 1, \dots, M \).
+Let M be the window length (number of samples minus 1) and \( i = 0, 1, ....., M \).
 
 **Hamming Window:**
 
 \[
-w[i] = 0.54 - 0.46 \cos\left(\frac{2\pi i}{M}\right)
+w[i] = 0.54 - 0.46 cos\(2π*i / M\)
 \]
 
 **Blackman Window:**
 
 \[
-w[i] = 0.42 - 0.5 \cos\left(\frac{2\pi i}{M}\right) + 0.08 \cos\left(\frac{4\pi i}{M}\right)
+w[i] = 0.42 - 0.5 cos\(2π*i / M\) + 0.08 cos\(4π*i / M\)
 \]
 
 These windows are applied to each time frame before computing the FFT in the STFT.
