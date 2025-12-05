@@ -170,7 +170,7 @@ Let M be the window length (number of samples minus 1) and \( i = 0, 1, ....., M
 **Hamming Window:**
 
 \[
-w[i] = 0.54 - 0.46 cos\(2π*i / M\)
+w[i] = 0.54 - 0.46 cos\(2πi / M\)
 \]
 
 **Blackman Window:**
